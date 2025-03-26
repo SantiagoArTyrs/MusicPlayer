@@ -1,0 +1,17 @@
+REPRODUCTOR DE MUSICA
+SANTIAGO FELIPE AREVALO BASTIDAS
+RQUEREMIENTOS DE FUNCION:
+Node.js con express
+Tener instalado Node.js en su dispositivo
+
+--Siguiendo la ruta music-repro\server\index.js
+node index.js para correr el backend
+
+--Desde la carpeta music-repro se debe:
+npm install desde la raiz del proyecto
+npm run dev para correrlo
+
+No se necesita nada mas ya que todas las dependencias estan en el package.json
+
+Para agregar canciones a la lista, se debe hacer click en el boton azul y poner la ruta se audio de cualquier cancion como por ejemplo: http://localhost:3000/music/song1.mp3 guardada en server/music
+Asi se agregara la cancion en la posicion deseada

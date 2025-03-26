@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-animated {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-animated::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(270deg, #3b82f6, #10b981, #ec4899, #f59e0b);
+  background-size: 800% 800%;
+  animation: wave-colors 15s ease infinite;
+  z-index: 0;
+  filter: blur(40px) opacity(0.3);
+}
+
+@keyframes wave-colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
